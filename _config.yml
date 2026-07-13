@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Hayun Song / Economist"
+title                    : "Hayun Song"
 title_separator          : "-"
 name                     : &name "Hayun Song"
-description              : &description "Hayun Song, Associate Research Fellow at KIEP"
+description              : &description "Hayun Song is an Associate Research Fellow at KIEP specializing in international macroeconomics and econometrics."
 url                      : https://hayunsong.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "HayunSong-PhD/hayunsong-phd.github.io"
@@ -62,29 +62,32 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : 7.jpg # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : Hayun Song
+  links:
+    - https://www.kiep.go.kr/expertsView.es?mid=a20108030000&staff_seq=390
+    - https://www.linkedin.com/in/hayunsong
+    - https://github.com/HayunSong-PhD
 
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : false # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          :
 
 
 # Site Author
 author:
-  name             : "Song, Hayun"
+  name             : "Hayun Song"
   avatar           : "7.jpg"
   bio              : "Associate Research Fellow, Korea Institute for International Economic Policy (KIEP)"
   location         : "Sejong, Republic of Korea"
-  employer         :
+  employer         : "Korea Institute for International Economic Policy (KIEP)"
   pubmed           : 
   googlescholar    : 
   email            : hayunsong@kiep.go.kr
@@ -255,7 +258,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins

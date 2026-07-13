@@ -1,24 +1,62 @@
 ---
 permalink: /
-title: "About Me"
-excerpt: "About Me"
+title: "About"
+excerpt: "Hayun Song is an economist at KIEP working on international macroeconomics and econometrics."
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-I am an Associate Research Fellow in the International Macroeconomics Team, Department of International Macroeconomics and Finance, at the [Korea Institute for International Economic Policy (KIEP)](https://www.kiep.go.kr/). I joined KIEP on August 5, 2024.
+<div class="home-intro">
+  <p class="home-intro__eyebrow">Associate Research Fellow · KIEP</p>
+  <p class="home-intro__lead">International macroeconomist and econometrician.</p>
+  <p>
+    I work in the International Macroeconomics Team, Department of International Macroeconomics and Finance, at the <a href="https://www.kiep.go.kr/">Korea Institute for International Economic Policy (KIEP)</a>. My research examines international macroeconomic spillovers and develops econometric methods for learning dependence in high-dimensional data.
+  </p>
+  <p>
+    I received my Ph.D. in Economics from the University of Southern California in 2024 under the supervision of <a href="http://www.econ.cam.ac.uk/people/emeritus/mhp1">M. Hashem Pesaran</a>.
+  </p>
 
-I received my Ph.D. in Economics from the University of Southern California in 2024, under the supervision of [M. Hashem Pesaran](http://www.econ.cam.ac.uk/people/emeritus/mhp1).
+  <div class="home-actions" aria-label="Primary links">
+    <a class="home-action home-action--primary" href="/publications/">View research</a>
+    <a class="home-action" href="/files/cv_hayunSong.pdf">Curriculum vitae</a>
+    <a class="home-action" href="https://www.kiep.go.kr/expertsView.es?mid=a20108030000&amp;staff_seq=390">KIEP profile</a>
+  </div>
+</div>
 
-My research focuses on Econometric Theory, Applied Econometrics, Bayesian Econometrics, and International Macroeconomics.
+<section class="home-section" aria-labelledby="research-interests">
+  <h2 id="research-interests" class="home-section__title">Research interests</h2>
+  <ul class="home-topics">
+    <li>International macroeconomics</li>
+    <li>Econometric theory</li>
+    <li>Bayesian econometrics</li>
+    <li>Machine learning</li>
+    <li>Structural learning</li>
+    <li>Conditional dependence</li>
+  </ul>
+</section>
 
-My core research areas include Structural Learning, Conditional Dependence, Bayesian Estimation, and the integration of Machine Learning methods into econometric frameworks.
+<section class="home-section" aria-labelledby="recent-publications">
+  <div class="home-section__heading">
+    <h2 id="recent-publications" class="home-section__title">Recent KIEP publications</h2>
+    <a href="/publications/#kiep-publications">View all research</a>
+  </div>
 
-**KIEP Profile**: [View official profile and publications](https://www.kiep.go.kr/expertsView.es?mid=a20108030000&staff_seq=390).
+  {% assign recent_kiep = site.publications | where: "category", "kiep_publication" | sort: "date" | reverse %}
+  <div class="home-publications">
+    {% for post in recent_kiep limit: 3 %}
+      <article class="home-publication">
+        <p class="home-publication__date">{{ post.date | date: "%B %Y" }}</p>
+        <h3><a href="{{ post.external_url }}">{{ post.title }}</a></h3>
+        <p class="home-publication__venue">{{ post.venue }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>
 
-**Email**: [hayunsong@kiep.go.kr](mailto:hayunsong@kiep.go.kr).
-
-**Blog**: [AIEconLab](https://www.aieconlab.com/) (Language: Korean).
-
-**CV**: [Standard CV](files/cv_hayunSong.pdf), [CV with abstracts](files/cv_hayunSong_long.pdf).
+<nav class="home-secondary-links" aria-label="Additional links">
+  <a href="/portfolio/">Applied data projects</a>
+  <a href="https://www.aieconlab.com/">AIEconLab blog <span aria-hidden="true">↗</span></a>
+  <a href="/files/cv_hayunSong_long.pdf">CV with research abstracts</a>
+  <a href="mailto:hayunsong@kiep.go.kr">Email</a>
+</nav>
