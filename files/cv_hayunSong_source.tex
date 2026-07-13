@@ -1,7 +1,7 @@
 \iflongcv
   \usepackage[margin=0.68in]{geometry}
 \else
-  \usepackage[margin=0.65in]{geometry}
+  \usepackage[margin=0.72in]{geometry}
 \fi
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -35,11 +35,15 @@
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
-\fancyfoot[R]{\iflongcv\small\else\footnotesize\fi H. Song, \thepage}
+\iflongcv
+  \fancyfoot[R]{\small H. Song, \thepage}
+\fi
 \fancypagestyle{plain}{%
   \fancyhf{}
   \renewcommand{\headrulewidth}{0pt}
-  \fancyfoot[R]{\iflongcv\small\else\footnotesize\fi H. Song, \thepage}
+  \iflongcv
+    \fancyfoot[R]{\small H. Song, \thepage}
+  \fi
 }
 
 \newcommand{\cvsection}[1]{%
@@ -50,9 +54,9 @@
     \vspace{1.5pt}\hrule\vspace{5pt}%
   \else
     \Needspace{3\baselineskip}%
-    \vspace{0.58em}%
+    \vspace{0.55em}%
     {\normalsize\bfseries\MakeUppercase{#1}}\par
-    \vspace{1pt}\hrule\vspace{3.5pt}%
+    \vspace{1pt}\hrule\vspace{4pt}%
   \fi
 }
 
@@ -87,26 +91,37 @@
   \else
     {\LARGE\bfseries HAYUN SONG}\par
     \vspace{3pt}
-    {\normalsize Associate Research Fellow}\par
-    {\normalsize International Macroeconomics Team}\par
-    {\normalsize Department of International Macroeconomics and Finance}\par
+    {\normalsize Associate Research Fellow, International Macroeconomics Team}\par
     {\normalsize Korea Institute for International Economic Policy (KIEP)}\par
-    \vspace{2pt}
-    {\small Updated July 2026}
+    \vspace{3pt}
+    {\small
+      \href{mailto:hayunsong@kiep.go.kr}{hayunsong@kiep.go.kr}
+      \quad\textbar\quad
+      \href{https://hayunsong.com}{hayunsong.com}
+      \quad\textbar\quad
+      \href{https://www.linkedin.com/in/hayunsong}{LinkedIn}
+    }
   \fi
 \end{center}
 
+\iflongcv
 \cvsection{Contact Information}
 \begin{tabularx}{\linewidth}{@{}X X@{}}
   KIEP, Sejong, Republic of Korea & Email: \href{mailto:hayunsong@kiep.go.kr}{hayunsong@kiep.go.kr} \\
   370 Sicheong-daero, Sejong-si 30147 & Tel: +82-44-414-1132 \\
   Web: \href{https://hayunsong.com}{hayunsong.com} & LinkedIn: \href{https://www.linkedin.com/in/hayunsong}{linkedin.com/in/hayunsong}
 \end{tabularx}
+\fi
 
 \cvsection{Professional Experience}
+\iflongcv
 \datedentry{\textbf{Associate Research Fellow}, Korea Institute for International Economic Policy (KIEP)}{International Macroeconomics Team, Department of International Macroeconomics and Finance}{Aug. 2024--Present}
+\else
+\datedentry{\textbf{Associate Research Fellow}, Korea Institute for International Economic Policy (KIEP)}{}{Aug. 2024--Present}
+\fi
 
 \cvsection{Education}
+\iflongcv
 \datedentry{\textbf{Ph.D., Economics}, University of Southern California, CA, US}{}{2024}
 {\small\hspace*{1.8em}\emph{High-dimensional Bayesian nonparanormal dynamic conditional model with multivariate volatility applications}\par}
 {\small\hspace*{1.8em}Committee: M. Hashem Pesaran (Chair), Cheng Hsiao, Timothy Armstrong\par}
@@ -114,6 +129,12 @@
 \datedentry{\textbf{M.A., Economics}, Boston University, MA, US}{}{2014}
 \datedentry{\textbf{B.A., Economics}, Sungkyunkwan University, Seoul, South Korea}{}{2012}
 \datedentry{\textbf{B.A., Business Administration}, Sungkyunkwan University, Seoul, South Korea}{}{2012}
+\else
+\datedentry{\textbf{Ph.D., Economics}, University of Southern California}{Advisor: \href{http://www.econ.cam.ac.uk/people/emeritus/mhp1}{M. Hashem Pesaran}}{2024}
+\datedentry{\textbf{M.S., Economics}, University of Wisconsin--Madison}{}{2016}
+\datedentry{\textbf{M.A., Economics}, Boston University}{}{2014}
+\datedentry{\textbf{B.A., Economics and Business Administration}, Sungkyunkwan University}{}{2012}
+\fi
 
 \cvsection{Fields of Interest}
 Econometrics, Applied Econometrics, Bayesian Statistics
@@ -122,7 +143,7 @@ Econometrics, Applied Econometrics, Bayesian Statistics
 \iflongcv
 \begin{enumerate}[itemsep=0.42em]
 \else
-\begin{enumerate}[itemsep=0.28em]
+\begin{enumerate}[itemsep=0.4em]
 \fi
   \paper{Song, Hayun (2024)}{High-dimensional Bayesian nonparanormal dynamic conditional model with multivariate volatility applications}
   \abstracttext{This paper develops a Bayesian method for estimating large conditional precision matrices within a DCC--GARCH framework. Wishart likelihoods, horseshoe priors, and a nonparanormal rank transformation allow sparse conditional dependence estimation even when the number of variables exceeds the number of observations. Monte Carlo experiments and applications to international stock indices and asset-pricing models demonstrate the method's empirical usefulness.}
@@ -136,32 +157,38 @@ Econometrics, Applied Econometrics, Bayesian Statistics
   \abstracttext{Using instrumental variable quantile regression on twins data, this paper studies heterogeneity in returns to schooling while addressing ability and measurement-error biases. Estimated returns range from 9 to 15 percent across quantiles, and Wald-type location-shift tests provide evidence of individual heterogeneity. The analysis also examines ability bias, measurement error, linearity, and heterogeneous returns to other worker characteristics.}
 \end{enumerate}
 
-\cvsection{KIEP Policy Research and Publications}
 \iflongcv
+\cvsection{KIEP Policy Research and Publications}
 \begin{enumerate}[series=kieppubs,itemsep=0.48em]
-\else
-\begin{enumerate}[series=kieppubs,itemsep=0.32em]
-\fi
   \item Hayun Song and Munsu Kang (2026). \href{https://www.kiep.go.kr/gallery.es?act=view\&bid=0003\&list_no=12327\&mid=a10102020000}{\emph{Oil Price Shocks from the U.S.-Iran War: Spillover Effects on Major Economies}}. KIEP Today's World Economy 26-09.
   \item Hayun Song and ByeongJun Lee (2026). \href{https://www.kiep.go.kr/gallery.es?act=view\&bid=0004\&list_no=12214\&mid=a10102030000}{\emph{AI Usage in Major Economies and Korea}}. KIEP World Economy Focus 26-04.
   \item Hayun Song, Sang-Ha Yoon, and Youngdoo Cho (2026). \href{https://www.kiep.go.kr/gallery.es?act=view\&bid=0003\&list_no=12190\&mid=a10102020000}{\emph{Economic Spillovers of Major External Shocks: Trade Policy Uncertainty and Oil Prices}}. KIEP Today's World Economy 26-03.
-  \iflongcv\else
-  \end{enumerate}
-  \newpage
-  \cvsection{KIEP Policy Research and Publications (continued)}
-  \begin{enumerate}[resume=kieppubs,itemsep=0.32em]
-  \fi
   \item Jiyoung Moon, Hayun Song, Hong Won Kim, JiWon Choi, and Ko Un Cho (2025). \href{https://www.kiep.go.kr/gallery.es?act=view\&bid=0001\&list_no=12325\&mid=a10101200000}{\emph{China's Medium- and Long-Term Growth Outlook and Changes in Its Growth Structure}}. KIEP Basic Research Report 25-12.
   \item Hongseok Choi, Jee Won Park, Hayun Song, ByeongJun Lee, and Kotbee Shin (2025). \href{https://www.kiep.go.kr/gallery.es?act=view\&bid=0001\&list_no=12300\&mid=a10101200000}{\emph{Global Trends in High Debt Levels and Their Macroeconomic Implications}}. KIEP Basic Research Report 25-11.
   \item Jung Eun Yoon, Hayun Song, and Byungjun Lee (2025). \href{https://www.kiep.go.kr/gallery.es?act=view\&bid=0001\&list_no=12180\&mid=a20205040000}{\emph{Cross-Country Economic Spillover Effects of Intangible Asset: Technology Diffusion and Implications}}. KIEP Policy Analyses 25-01.
   \item Song, Hayun (2025). \href{https://www.kiep.go.kr/gallery.es?act=view\&bid=0008\&list_no=11935\&mid=a20205020000}{\emph{Small Differences, Large Divisions: How Political Gaps Widen Over Time}}. KIEP Opinions 319.
 \end{enumerate}
+\else
+\cvsection{Selected KIEP Publications}
+\begin{enumerate}[itemsep=0.32em]
+  \item Hayun Song and Munsu Kang (2026). \href{https://www.kiep.go.kr/gallery.es?act=view\&bid=0003\&list_no=12327\&mid=a10102020000}{\emph{Oil Price Shocks from the U.S.-Iran War: Spillover Effects on Major Economies}}. KIEP Today's World Economy 26-09.
+  \item Hayun Song and ByeongJun Lee (2026). \href{https://www.kiep.go.kr/gallery.es?act=view\&bid=0004\&list_no=12214\&mid=a10102030000}{\emph{AI Usage in Major Economies and Korea}}. KIEP World Economy Focus 26-04.
+  \item Hayun Song, Sang-Ha Yoon, and Youngdoo Cho (2026). \href{https://www.kiep.go.kr/gallery.es?act=view\&bid=0003\&list_no=12190\&mid=a10102020000}{\emph{Economic Spillovers of Major External Shocks: Trade Policy Uncertainty and Oil Prices}}. KIEP Today's World Economy 26-03.
+  \item Hongseok Choi, Jee Won Park, Hayun Song, ByeongJun Lee, and Kotbee Shin (2025). \href{https://www.kiep.go.kr/gallery.es?act=view\&bid=0001\&list_no=12300\&mid=a10101200000}{\emph{Global Trends in High Debt Levels and Their Macroeconomic Implications}}. KIEP Basic Research Report 25-11.
+\end{enumerate}
+\fi
 
 \cvsection{Fellowships, Honors, and Awards}
+\iflongcv
 \datedentry{\textbf{Summer Research Award}, Department of Economics, USC}{Best third-year paper award.}{2021}
 \datedentry{\textbf{Summer Research Award}, Department of Economics, USC}{Best second-year paper award.}{2018}
 \datedentry{\textbf{Scholarship for Excellence}, Sungkyunkwan University}{Awarded to the top 50 students in the department.}{2009}
+\else
+\datedentry{\textbf{Summer Research Award}, Department of Economics, USC}{}{2021, 2018}
+\datedentry{\textbf{Scholarship for Excellence}, Sungkyunkwan University}{}{2009}
+\fi
 
+\iflongcv
 \cvsection{Research and Teaching Assistance}
 \datedentry{\textbf{Research Assistant}, University of Southern California}{Prof. M. Hashem Pesaran, with Prof. Ron Smith}{Fall 2021--2024}
 \datedentry{\textbf{Teaching Assistant}, University of Southern California}{}{}
@@ -194,7 +221,6 @@ Econometrics, Applied Econometrics, Bayesian Statistics
 \textbf{Citizenship:} South Korea
 
 \cvsection{References}
-\iflongcv
 \begin{tabularx}{\linewidth}{@{}X X X@{}}
   \textbf{M. Hashem Pesaran} & \textbf{Cheng Hsiao} & \textbf{Timothy Armstrong} \\
   Distinguished Professor Emeritus & Professor of Economics & Professor of Economics \\
@@ -202,12 +228,11 @@ Econometrics, Applied Econometrics, Bayesian Statistics
   \href{mailto:pesaran@usc.edu}{pesaran@usc.edu} & \href{mailto:chsiao@usc.edu}{chsiao@usc.edu} & \href{mailto:timothy.armstrong@usc.edu}{timothy.armstrong@usc.edu}
 \end{tabularx}
 \else
-\begin{tabularx}{\linewidth}{@{}X X X@{}}
-  \textbf{M. Hashem Pesaran} & \textbf{Cheng Hsiao} & \textbf{Timothy Armstrong} \\
-  Distinguished Professor Emeritus & Professor of Economics & Professor of Economics \\
-  University of Southern California & University of Southern California & University of Southern California \\
-  \href{mailto:pesaran@usc.edu}{pesaran@usc.edu} & \href{mailto:chsiao@usc.edu}{chsiao@usc.edu} & \href{mailto:timothy.armstrong@usc.edu}{timothy.armstrong@usc.edu}
-\end{tabularx}
+\cvsection{Skills and Languages}
+\textbf{Programming:} Python (CuPy, PyTorch), R, Stata, Gauss, Git, LaTeX, MATLAB, and MySQL\par
+\textbf{Languages:} Korean, English, and Japanese (native fluency)\par
+\vspace{0.55em}
+{\small Complete publication record, teaching experience, projects, and references are available in the \href{https://hayunsong.com/files/cv_hayunSong_long.pdf}{Long CV}.}
 \fi
 
 \end{document}

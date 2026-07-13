@@ -7,13 +7,13 @@ redirect_from:
   - /resume
 ---
 
-<p class="cv-intro">Choose the concise CV for a complete overview or the extended version for research abstracts and additional project detail.</p>
+<p class="cv-intro">Choose the one-page summary for quick review or the extended version for the complete professional record, research abstracts, and additional project detail.</p>
 
 <div class="cv-options">
   <article class="cv-option">
-    <p class="cv-option__eyebrow">Concise · 2 pages</p>
+    <p class="cv-option__eyebrow">Concise · 1 page</p>
     <h2>Short CV</h2>
-    <p>A readable overview of education, professional experience, research, KIEP publications, teaching, awards, projects, and references.</p>
+    <p>A focused one-page profile covering my current position, education, research fields, selected academic and KIEP work, awards, and technical skills.</p>
     <a class="home-action home-action--primary" href="/files/cv_hayunSong.pdf">Open Short CV</a>
   </article>
 
