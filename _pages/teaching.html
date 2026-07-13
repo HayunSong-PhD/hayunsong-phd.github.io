@@ -5,20 +5,103 @@ permalink: /teaching/
 author_profile: true
 ---
 
-{% include base_path %}
+<div class="experience">
+  <section class="experience__section" aria-labelledby="professional-experience">
+    <h2 id="professional-experience" class="experience__section-title">Professional Experience</h2>
 
-{% for post in site.teaching reversed %}
-  <div class="archive__item">
-    <h2 class="archive__item-title">
-      {{ post.title }}
-      <span style="margin-left: 20px;">
-        {% if post.external_url %}
-          <a href="{{ post.external_url }}" target="_blank">details</a>
-        {% else %}
-          <a href="{{ post.url | prepend: site.baseurl }}">details</a>
-        {% endif %}
-      </span>
-    </h2>
-    <p class="archive__item-excerpt">{{ post.excerpt }}</p>
-  </div>
-{% endfor %}
+    <article class="experience__item">
+      <div class="experience__heading">
+        <div>
+          <h3 class="experience__role">Associate Research Fellow</h3>
+          <p class="experience__organization"><a href="https://www.kiep.go.kr/">Korea Institute for International Economic Policy (KIEP)</a></p>
+        </div>
+        <p class="experience__date">Aug. 2024–Present</p>
+      </div>
+      <p class="experience__description">
+        International Macroeconomics Team<br>
+        Department of International Macroeconomics and Finance
+      </p>
+    </article>
+
+    <article class="experience__item">
+      <div class="experience__heading">
+        <div>
+          <h3 class="experience__role">Research Assistant</h3>
+          <p class="experience__organization">University of Southern California</p>
+        </div>
+        <p class="experience__date">Fall 2021–2024</p>
+      </div>
+      <p class="experience__description">
+        Advisor: <a href="http://www.econ.cam.ac.uk/people/emeritus/mhp1">M. Hashem Pesaran</a>, with <a href="https://www.bbk.ac.uk/our-staff/profile/8003558/ron-smith">Ron Smith</a>
+      </p>
+    </article>
+  </section>
+
+  <section class="experience__section" aria-labelledby="teaching-experience">
+    <h2 id="teaching-experience" class="experience__section-title">Teaching Experience</h2>
+
+    <article class="experience__item">
+      <div class="experience__heading">
+        <div>
+          <h3 class="experience__role">Teaching Assistant</h3>
+          <p class="experience__organization">University of Southern California</p>
+        </div>
+        <p class="experience__date">Fall 2017–Summer 2022</p>
+      </div>
+      <p class="experience__description">Undergraduate, master's, and Ph.D. courses in econometrics, statistics, mathematics, and macroeconomics.</p>
+
+      <details class="experience__details">
+        <summary>Courses and sample evaluations</summary>
+        <div class="experience__courses">
+          <div class="experience__course">
+            <div>
+              <p class="experience__course-name"><span>ECON 318</span> Introduction to Econometrics</p>
+              <p class="experience__course-level">Undergraduate</p>
+              <p class="experience__samples">
+                Sample evaluations:
+                <a href="https://www.dropbox.com/scl/fi/k7de6az7ictnonbl4qz2s/26311-20221_ECON-318-Introduction-to-Econometrics-26311.pdf?rlkey=zeqp75upax75tdr0flw0qxk6z&amp;dl=0">1</a>
+                <span aria-hidden="true">·</span>
+                <a href="https://www.dropbox.com/scl/fi/iuvxwe0qvkuqukysokknc/26312-20221_ECON-318-Introduction-to-Econometrics-26312.pdf?rlkey=zfogcy9no7hsy3n10xilk39rr&amp;dl=0">2</a>
+                <span aria-hidden="true">·</span>
+                <a href="https://www.dropbox.com/scl/fi/g3umjxaxg8xfypcn0ivh3/26313-20222_ECON-318-Introduction-to-Econometrics-26313.pdf?rlkey=hw1vp4zkbtt2892zn3sy1skwc&amp;dl=0">3</a>
+              </p>
+            </div>
+            <p class="experience__course-date">Spring &amp; Summer 2022</p>
+          </div>
+
+          <div class="experience__course">
+            <div>
+              <p class="experience__course-name"><span>ECON 513</span> Practice of Econometrics</p>
+              <p class="experience__course-level">Master's</p>
+            </div>
+            <p class="experience__course-date">Fall 2021</p>
+          </div>
+
+          <div class="experience__course">
+            <div>
+              <p class="experience__course-name"><span>ECON 611</span> Probability and Statistics for Economists</p>
+              <p class="experience__course-level">Ph.D.</p>
+            </div>
+            <p class="experience__course-date">Fall 2018</p>
+          </div>
+
+          <div class="experience__course">
+            <div>
+              <p class="experience__course-name"><span>ECON 401</span> Mathematical Methods in Economics</p>
+              <p class="experience__course-level">Undergraduate</p>
+            </div>
+            <p class="experience__course-date">Fall 2018</p>
+          </div>
+
+          <div class="experience__course">
+            <div>
+              <p class="experience__course-name"><span>ECON 305</span> Intermediate Macroeconomic Theory</p>
+              <p class="experience__course-level">Undergraduate</p>
+            </div>
+            <p class="experience__course-date">Fall 2017 &amp; Spring 2018</p>
+          </div>
+        </div>
+      </details>
+    </article>
+  </section>
+</div>
