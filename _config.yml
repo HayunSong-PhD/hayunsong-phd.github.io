@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Hayun Song / Ph.D. Economics"
+title                    : "Hayun Song / Economist"
 title_separator          : "-"
 name                     : &name "Hayun Song"
-description              : &description "personal description"
-url                      : https://hayunsong.com/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : &description "Hayun Song, Associate Research Fellow at KIEP"
+url                      : https://hayunsong.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "https://github.com/HayunSong-PhD/HayunSong-PhD/"
+repository               : "HayunSong-PhD/hayunsong-phd.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -82,14 +82,14 @@ analytics:
 author:
   name             : "Song, Hayun"
   avatar           : "7.jpg"
-  bio              : "Ph.D. Candidate in Economics, University of Southern California (USC)"
-  location         : "Los Angeles, CA, USA"
+  bio              : "Associate Research Fellow, Korea Institute for International Economic Policy (KIEP)"
+  location         : "Sejong, Republic of Korea"
   employer         :
   pubmed           : 
   googlescholar    : 
-  email            :
+  email            : hayunsong@kiep.go.kr
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              :
+  uri              : "https://www.kiep.go.kr/expertsView.es?mid=a20108030000&staff_seq=390"
   bitbucket        :
   codepen          :
   dribbble         :

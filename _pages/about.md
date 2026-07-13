@@ -7,16 +7,16 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Hayun Song, Ph.D. Candidate in [Economics](https://dornsife.usc.edu/econ/doctoral-job-market-candidates/), University of Southern California
+Hayun Song is an Associate Research Fellow in the International Macroeconomics Team, Department of International Macroeconomics and Finance, at the [Korea Institute for International Economic Policy (KIEP)](https://www.kiep.go.kr/). He joined KIEP on August 5, 2024.
 
-As an Economist at the University of Southern California (USC), my scholarly pursuits are anchored in the domains of Econometric Theory, Applied Econometrics, and Bayesian Econometrics. 
+His research focuses on Econometric Theory, Applied Econometrics, Bayesian Econometrics, and International Macroeconomics.
 
-My core research areas encompass Structural Learning, Conditional Dependence, Bayesian Estimation, and the integration of Machine Learning methodologies into econometric frameworks.
+His core research areas encompass Structural Learning, Conditional Dependence, Bayesian Estimation, and the integration of Machine Learning methodologies into econometric frameworks.
 
-I will be available for interview on the 2023/24 Job Market.
+**KIEP Profile**: [View official profile and publications](https://www.kiep.go.kr/expertsView.es?mid=a20108030000&staff_seq=390).
 
-**Email**: [hayunson@usc.edu](mailto:hayunson@usc.edu).
+**Email**: [hayunsong@kiep.go.kr](mailto:hayunsong@kiep.go.kr).
 
 **Blog**: [AIEconLab](https://www.aieconlab.com/) (Language: Korean).
 
-**CV**: [Donwload Here](files/cv_hayunSong.pdf), [Longer Version](files/cv_hayunSong_long.pdf).
+**CV**: [Download Here](files/cv_hayunSong.pdf), [Longer Version](files/cv_hayunSong_long.pdf).
