@@ -9,6 +9,8 @@ redirect_from:
 ---
 I am an Associate Research Fellow in the International Macroeconomics Team, Department of International Macroeconomics and Finance, at the [Korea Institute for International Economic Policy (KIEP)](https://www.kiep.go.kr/). I joined KIEP on August 5, 2024.
 
+I received my Ph.D. in Economics from the University of Southern California in 2024, under the supervision of M. Hashem Pesaran.
+
 My research focuses on Econometric Theory, Applied Econometrics, Bayesian Econometrics, and International Macroeconomics.
 
 My core research areas include Structural Learning, Conditional Dependence, Bayesian Estimation, and the integration of Machine Learning methods into econometric frameworks.
@@ -19,4 +21,4 @@ My core research areas include Structural Learning, Conditional Dependence, Baye
 
 **Blog**: [AIEconLab](https://www.aieconlab.com/) (Language: Korean).
 
-**CV**: [Download Here](files/cv_hayunSong.pdf), [Longer Version](files/cv_hayunSong_long.pdf).
+**CV**: [Short version](files/cv_hayunSong.pdf), [Long version](files/cv_hayunSong_long.pdf).
