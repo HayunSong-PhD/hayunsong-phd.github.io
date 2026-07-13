@@ -7,11 +7,11 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Hayun Song is an Associate Research Fellow in the International Macroeconomics Team, Department of International Macroeconomics and Finance, at the [Korea Institute for International Economic Policy (KIEP)](https://www.kiep.go.kr/). He joined KIEP on August 5, 2024.
+I am an Associate Research Fellow in the International Macroeconomics Team, Department of International Macroeconomics and Finance, at the [Korea Institute for International Economic Policy (KIEP)](https://www.kiep.go.kr/). I joined KIEP on August 5, 2024.
 
-His research focuses on Econometric Theory, Applied Econometrics, Bayesian Econometrics, and International Macroeconomics.
+My research focuses on Econometric Theory, Applied Econometrics, Bayesian Econometrics, and International Macroeconomics.
 
-His core research areas encompass Structural Learning, Conditional Dependence, Bayesian Estimation, and the integration of Machine Learning methodologies into econometric frameworks.
+My core research areas include Structural Learning, Conditional Dependence, Bayesian Estimation, and the integration of Machine Learning methods into econometric frameworks.
 
 **KIEP Profile**: [View official profile and publications](https://www.kiep.go.kr/expertsView.es?mid=a20108030000&staff_seq=390).
 
