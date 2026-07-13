@@ -19,7 +19,7 @@ redirect_from:
 
   <div class="home-actions" aria-label="Primary links">
     <a class="home-action home-action--primary" href="/publications/">View research</a>
-    <a class="home-action" href="/files/cv_hayunSong.pdf">Curriculum vitae</a>
+    <a class="home-action" href="/cv/">CV: Short &amp; Long</a>
     <a class="home-action" href="https://www.kiep.go.kr/expertsView.es?mid=a20108030000&amp;staff_seq=390">KIEP profile</a>
   </div>
 </div>
@@ -57,6 +57,6 @@ redirect_from:
 <nav class="home-secondary-links" aria-label="Additional links">
   <a href="/portfolio/">Applied data projects</a>
   <a href="https://www.aieconlab.com/">AIEconLab blog <span aria-hidden="true">↗</span></a>
-  <a href="/files/cv_hayunSong_long.pdf">CV with research abstracts</a>
+  <a href="/files/cv_hayunSong_long.pdf">Long CV with research abstracts</a>
   <a href="mailto:hayunsong@kiep.go.kr">Email</a>
 </nav>

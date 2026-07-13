@@ -217,7 +217,9 @@
   }
 
   li {
-    white-space: nowrap;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
   }
 
   a {
