@@ -1,4 +1,8 @@
-\usepackage[margin=0.68in]{geometry}
+\iflongcv
+  \usepackage[margin=0.68in]{geometry}
+\else
+  \usepackage[margin=0.40in]{geometry}
+\fi
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
@@ -23,22 +27,32 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 \setlength{\tabcolsep}{0pt}
-\setlist{nosep,leftmargin=1.55em}
+\iflongcv
+  \setlist{nosep,leftmargin=1.55em}
+\else
+  \setlist{nosep,leftmargin=1.35em}
+\fi
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
-\fancyfoot[R]{\small H. Song, \thepage}
+\fancyfoot[R]{\iflongcv\small\else\scriptsize\fi H. Song, \thepage}
 \fancypagestyle{plain}{%
   \fancyhf{}
   \renewcommand{\headrulewidth}{0pt}
-  \fancyfoot[R]{\small H. Song, \thepage}
+  \fancyfoot[R]{\iflongcv\small\else\scriptsize\fi H. Song, \thepage}
 }
 
 \newcommand{\cvsection}[1]{%
-  \Needspace{4\baselineskip}%
-  \vspace{0.72em}%
-  {\large\bfseries\MakeUppercase{#1}}\par
-  \vspace{1.5pt}\hrule\vspace{5pt}%
+  \iflongcv
+    \Needspace{4\baselineskip}%
+    \vspace{0.72em}%
+    {\large\bfseries\MakeUppercase{#1}}\par
+    \vspace{1.5pt}\hrule\vspace{5pt}%
+  \else
+    \vspace{0.28em}%
+    {\normalsize\bfseries\MakeUppercase{#1}}\par
+    \vspace{0.5pt}\hrule\vspace{1.5pt}%
+  \fi
 }
 
 \newcommand{\datedentry}[3]{%
@@ -60,17 +74,29 @@
 \begin{document}
 
 \begin{center}
-  {\LARGE\bfseries HAYUN SONG}\par
-  \vspace{4pt}
-  {\normalsize Associate Research Fellow}\par
-  {\normalsize International Macroeconomics Team}\par
-  {\normalsize Department of International Macroeconomics and Finance}\par
-  {\normalsize Korea Institute for International Economic Policy (KIEP)}\par
-  \vspace{2pt}
-  {\small Updated July 2026}
+  \iflongcv
+    {\LARGE\bfseries HAYUN SONG}\par
+    \vspace{4pt}
+    {\normalsize Associate Research Fellow}\par
+    {\normalsize International Macroeconomics Team}\par
+    {\normalsize Department of International Macroeconomics and Finance}\par
+    {\normalsize Korea Institute for International Economic Policy (KIEP)}\par
+    \vspace{2pt}
+    {\small Updated July 2026}
+  \else
+    {\Large\bfseries HAYUN SONG}\par
+    \vspace{1pt}
+    {\small Associate Research Fellow \textbullet{} International Macroeconomics Team}\par
+    {\small Department of International Macroeconomics and Finance}\par
+    {\small Korea Institute for International Economic Policy (KIEP) \textbullet{} Updated July 2026}
+  \fi
 \end{center}
 
+\iflongcv
 \cvsection{Contact Information}
+\else
+\vspace{-0.35em}
+\fi
 \begin{tabularx}{\linewidth}{@{}X X@{}}
   KIEP, Sejong, Republic of Korea & Email: \href{mailto:hayunsong@kiep.go.kr}{hayunsong@kiep.go.kr} \\
   370 Sicheong-daero, Sejong-si 30147 & Tel: +82-44-414-1132 \\
@@ -93,7 +119,11 @@
 Econometrics, Applied Econometrics, Bayesian Statistics
 
 \cvsection{Research Papers}
+\iflongcv
 \begin{enumerate}[itemsep=0.42em]
+\else
+\begin{enumerate}[itemsep=0.08em]
+\fi
   \paper{Song, Hayun (2024)}{High-dimensional Bayesian nonparanormal dynamic conditional model with multivariate volatility applications}
   \abstracttext{This paper develops a Bayesian method for estimating large conditional precision matrices within a DCC--GARCH framework. Wishart likelihoods, horseshoe priors, and a nonparanormal rank transformation allow sparse conditional dependence estimation even when the number of variables exceeds the number of observations. Monte Carlo experiments and applications to international stock indices and asset-pricing models demonstrate the method's empirical usefulness.}
 
@@ -107,16 +137,14 @@ Econometrics, Applied Econometrics, Bayesian Statistics
 \end{enumerate}
 
 \cvsection{KIEP Policy Research and Publications}
+\iflongcv
 \begin{enumerate}[series=kieppubs,itemsep=0.48em]
+\else
+\begin{enumerate}[series=kieppubs,itemsep=0.08em]
+\fi
   \item Hayun Song and Munsu Kang (2026). \href{https://www.kiep.go.kr/gallery.es?act=view\&bid=0003\&list_no=12327\&mid=a10102020000}{\emph{Oil Price Shocks from the U.S.-Iran War: Spillover Effects on Major Economies}}. KIEP Today's World Economy 26-09.
   \item Hayun Song and ByeongJun Lee (2026). \href{https://www.kiep.go.kr/gallery.es?act=view\&bid=0004\&list_no=12214\&mid=a10102030000}{\emph{AI Usage in Major Economies and Korea}}. KIEP World Economy Focus 26-04.
   \item Hayun Song, Sang-Ha Yoon, and Youngdoo Cho (2026). \href{https://www.kiep.go.kr/gallery.es?act=view\&bid=0003\&list_no=12190\&mid=a10102020000}{\emph{Economic Spillovers of Major External Shocks: Trade Policy Uncertainty and Oil Prices}}. KIEP Today's World Economy 26-03.
-  \iflongcv\else
-\end{enumerate}
-\newpage
-\cvsection{KIEP Policy Research and Publications (continued)}
-\begin{enumerate}[resume=kieppubs,itemsep=0.48em]
-  \fi
   \item Jiyoung Moon, Hayun Song, Hong Won Kim, JiWon Choi, and Ko Un Cho (2025). \href{https://www.kiep.go.kr/gallery.es?act=view\&bid=0001\&list_no=12325\&mid=a10101200000}{\emph{China's Medium- and Long-Term Growth Outlook and Changes in Its Growth Structure}}. KIEP Basic Research Report 25-12.
   \item Hongseok Choi, Jee Won Park, Hayun Song, ByeongJun Lee, and Kotbee Shin (2025). \href{https://www.kiep.go.kr/gallery.es?act=view\&bid=0001\&list_no=12300\&mid=a10101200000}{\emph{Global Trends in High Debt Levels and Their Macroeconomic Implications}}. KIEP Basic Research Report 25-11.
   \item Jung Eun Yoon, Hayun Song, and Byungjun Lee (2025). \href{https://www.kiep.go.kr/gallery.es?act=view\&bid=0001\&list_no=12180\&mid=a20205040000}{\emph{Cross-Country Economic Spillover Effects of Intangible Asset: Technology Diffusion and Implications}}. KIEP Policy Analyses 25-01.
@@ -124,9 +152,15 @@ Econometrics, Applied Econometrics, Bayesian Statistics
 \end{enumerate}
 
 \cvsection{Fellowships, Honors, and Awards}
+\iflongcv
 \datedentry{\textbf{Summer Research Award}, Department of Economics, USC}{Best third-year paper award.}{2021}
 \datedentry{\textbf{Summer Research Award}, Department of Economics, USC}{Best second-year paper award.}{2018}
 \datedentry{\textbf{Scholarship for Excellence}, Sungkyunkwan University}{Awarded to the top 50 students in the department.}{2009}
+\else
+\datedentry{\textbf{Summer Research Award}, Department of Economics, USC --- Best third-year paper award.}{}{2021}
+\datedentry{\textbf{Summer Research Award}, Department of Economics, USC --- Best second-year paper award.}{}{2018}
+\datedentry{\textbf{Scholarship for Excellence}, Sungkyunkwan University --- Awarded to the top 50 students in the department.}{}{2009}
+\fi
 
 \cvsection{Research and Teaching Assistance}
 \datedentry{\textbf{Research Assistant}, University of Southern California}{Prof. M. Hashem Pesaran, with Prof. Ron Smith}{Fall 2021--2024}
@@ -140,7 +174,11 @@ Econometrics, Applied Econometrics, Bayesian Statistics
 }
 
 \cvsection{Data Analytic Projects}
+\iflongcv
 \begin{enumerate}[itemsep=0.44em]
+\else
+\begin{enumerate}[itemsep=0.08em]
+\fi
   \item \textbf{LGBT Clinic Data Analysis} \hfill 2018
   \iflongcv\par{\small Analyzed clinic appointment and insurance data, identifying systematic differences in visit timing and insurance coverage across patient groups.}\fi
   \item \textbf{Anti-AgingGames.com Senior Center Cognitive Training Pilot Study} \hfill 2018
@@ -156,11 +194,20 @@ Econometrics, Applied Econometrics, Bayesian Statistics
 \textbf{Citizenship:} South Korea
 
 \cvsection{References}
+\iflongcv
 \begin{tabularx}{\linewidth}{@{}X X X@{}}
   \textbf{M. Hashem Pesaran} & \textbf{Cheng Hsiao} & \textbf{Timothy Armstrong} \\
   Distinguished Professor Emeritus & Professor of Economics & Professor of Economics \\
   University of Southern California & University of Southern California & University of Southern California \\
   \href{mailto:pesaran@usc.edu}{pesaran@usc.edu} & \href{mailto:chsiao@usc.edu}{chsiao@usc.edu} & \href{mailto:timothy.armstrong@usc.edu}{timothy.armstrong@usc.edu}
 \end{tabularx}
+\else
+\begin{tabularx}{\linewidth}{@{}X X X@{}}
+  \textbf{M. Hashem Pesaran} & \textbf{Cheng Hsiao} & \textbf{Timothy Armstrong} \\
+  Distinguished Professor Emeritus & Professor of Economics & Professor of Economics \\
+  University of Southern California & University of Southern California & University of Southern California \\
+  \href{mailto:pesaran@usc.edu}{pesaran@usc.edu} & \href{mailto:chsiao@usc.edu}{chsiao@usc.edu} & \href{mailto:timothy.armstrong@usc.edu}{timothy.armstrong@usc.edu}
+\end{tabularx}
+\fi
 
 \end{document}
