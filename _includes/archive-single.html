@@ -32,8 +32,8 @@
       </div>
     {% endif %}
 
-    <h2 class="archive__item-title" itemprop="headline">
-      {% if post.collection == 'portfolio' %}
+    <h2 class="archive__item-title{% if post.collection == 'portfolio' or post.noninteractive %} archive__item-title--static{% endif %}" itemprop="headline">
+      {% if post.collection == 'portfolio' or post.noninteractive %}
         {{ title }}
       {% elsif post.external_url %}
         <a href="{{ post.external_url }}">{{ title }}</a>
