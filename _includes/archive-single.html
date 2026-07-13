@@ -13,13 +13,8 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item{% if post.collection == 'publications' %} publication__item{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
 
-    <!--<p>Debugging Info: </p>
-    <p>Post Title: {{ post.title }}</p>
-    <p>Post Category: {{ post.category }}</p>
-    <p>Post Collection: {{ post.collection }}</p>-->
-    
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -60,7 +55,7 @@
       {% endif %}
       {% if post.venue %}
         {% if post.category == 'kiep_publication' %}
-          <p><i>{{ post.venue }}</i>, {{ post.date | date: "%B %d, %Y" }}</p>
+          <p><i>{{ post.venue }}</i>, {{ post.date | date: "%B %-d, %Y" }}</p>
         {% else %}
           <p><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
         {% endif %}
@@ -73,7 +68,15 @@
     
     <!-- Display the abstract consistently across research categories -->
     {% if post.abstract %}
-      <p><strong>Abstract:</strong> {{ post.abstract }}</p>
+      {% if include.compact_abstract %}
+        <p class="publication__abstract-preview"><strong>Summary:</strong> {{ post.abstract | truncatewords: 55 }}</p>
+        <details class="publication__abstract">
+          <summary>Full abstract</summary>
+          <p>{{ post.abstract }}</p>
+        </details>
+      {% else %}
+        <p><strong>Abstract:</strong> {{ post.abstract }}</p>
+      {% endif %}
     {% endif %}
 
     {% if post.read_time %}

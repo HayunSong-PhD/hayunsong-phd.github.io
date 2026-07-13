@@ -1,16 +1,16 @@
 # main links links
 main:
+  - title: "About"
+    url: /
+
   - title: "Research"
     url: /publications/
-    
-  - title: "Data Projects"
-    url: /portfolio/
 
   - title: "Experience"
-    url: /teaching/    
-    
-#  - title: "CV"
-#    url: /cv/
+    url: /teaching/
+
+  - title: "CV"
+    url: /files/cv_hayunSong.pdf
 
 #  - title: "Blog Posts"
 #    url: /year-archive/
