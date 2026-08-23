@@ -20,9 +20,9 @@ redirect_from:
   <article class="cv-option">
     <p class="cv-option__eyebrow">Extended · 2 pages</p>
     <h2>Long CV with abstracts</h2>
-    <p>Includes the same professional record together with English abstracts for selected research papers and fuller project descriptions.</p>
+    <p>Includes the complete professional record together with English abstracts, conference presentations, and fuller project descriptions.</p>
     <a class="home-action" href="/files/cv_hayunSong_long.pdf">Open Long CV</a>
   </article>
 </div>
 
-<p class="cv-note">Both versions were updated in July 2026.</p>
+<p class="cv-note">Both versions were updated in August 2026.</p>
