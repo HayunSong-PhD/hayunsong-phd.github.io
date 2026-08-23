@@ -1,5 +1,5 @@
 \iflongcv
-  \usepackage[margin=0.68in]{geometry}
+  \usepackage[margin=0.62in]{geometry}
 \else
   \usepackage[margin=0.72in]{geometry}
 \fi
@@ -49,9 +49,9 @@
 \newcommand{\cvsection}[1]{%
   \iflongcv
     \Needspace{4\baselineskip}%
-    \vspace{0.72em}%
+    \vspace{0.55em}%
     {\large\bfseries\MakeUppercase{#1}}\par
-    \vspace{1.5pt}\hrule\vspace{5pt}%
+    \vspace{1.5pt}\hrule\vspace{4pt}%
   \else
     \Needspace{3\baselineskip}%
     \vspace{0.55em}%
@@ -70,13 +70,16 @@
 \newcommand{\paper}[2]{\item #1. \emph{#2}.}
 \newcommand{\abstracttext}[1]{%
   \iflongcv
-    \par\vspace{3pt}\hspace*{0.9em}\begin{minipage}{0.965\linewidth}
+    \par\vspace{2pt}\hspace*{0.9em}\begin{minipage}{0.965\linewidth}
       \small\textbf{Abstract:} #1
-    \end{minipage}\par\vspace{4pt}
+    \end{minipage}\par\vspace{3pt}
   \fi
 }
 
 \begin{document}
+\iflongcv
+  \fontsize{9.5}{11}\selectfont
+\fi
 
 \begin{center}
   \iflongcv
@@ -87,7 +90,7 @@
     {\normalsize Department of International Macroeconomics and Finance}\par
     {\normalsize Korea Institute for International Economic Policy (KIEP)}\par
     \vspace{2pt}
-    {\small Updated July 2026}
+    {\small Updated August 2026}
   \else
     {\LARGE\bfseries HAYUN SONG}\par
     \vspace{3pt}
@@ -141,10 +144,13 @@ Econometrics, Applied Econometrics, Bayesian Statistics
 
 \cvsection{Research Papers}
 \iflongcv
-\begin{enumerate}[itemsep=0.42em]
+\begin{enumerate}[itemsep=0.25em]
 \else
 \begin{enumerate}[itemsep=0.4em]
 \fi
+  \item Song, Hayun (2026). \emph{Country-Specific Threshold Estimation in Global VARs}. [Work in progress; presented at the \href{https://2026-kiea-summerconference.netlify.app/\#program}{2026 KIEA Summer Conference}].
+  \abstracttext{This paper develops an exact estimator for country-specific thresholds in Global VAR country blocks. Under fixed non-zero threshold effects, it establishes consistency and $T$-rate tightness for threshold locations and first-order oracle transfer for the full coefficient vector; under shrinking effects, it derives a joint limit for the rescaled threshold location and criterion supremum within a restricted invariant Gaussian subclass. Monte Carlo experiments and a 33-country external-debt application document both favorable and adverse finite-sample patterns. The analysis does not test for threshold existence or identify causal tipping points.}
+
   \paper{Song, Hayun (2024)}{High-dimensional Bayesian nonparanormal dynamic conditional model with multivariate volatility applications}
   \abstracttext{This paper develops a Bayesian method for estimating large conditional precision matrices within a DCC--GARCH framework. Wishart likelihoods, horseshoe priors, and a nonparanormal rank transformation allow sparse conditional dependence estimation even when the number of variables exceeds the number of observations. Monte Carlo experiments and applications to international stock indices and asset-pricing models demonstrate the method's empirical usefulness.}
 
@@ -153,13 +159,21 @@ Econometrics, Applied Econometrics, Bayesian Statistics
   \paper{Song, Hayun (2021)}{Bayesian dynamic factor augmented structure learning: cross-sectional dependence for residuals}
   \abstracttext{This paper proposes a Bayesian dynamic factor-augmented VAR that represents contemporaneous cross-sectional dependence as a graphical model. Factors are estimated through principal components and forward-filtering backward-sampling, while rescaled spike-and-slab priors address high-dimensional transition matrices. A fractional Bayes factor supports graphical model selection, with simulations and an application to U.S. house prices illustrating the approach.}
 
+  \iflongcv
   \paper{Song, Hayun (2018)}{Individual heterogeneity in the returns to schooling: instrumental variable quantile regression}
   \abstracttext{Using instrumental variable quantile regression on twins data, this paper studies heterogeneity in returns to schooling while addressing ability and measurement-error biases. Estimated returns range from 9 to 15 percent across quantiles, and Wald-type location-shift tests provide evidence of individual heterogeneity. The analysis also examines ability bias, measurement error, linearity, and heterogeneous returns to other worker characteristics.}
+  \fi
 \end{enumerate}
 
 \iflongcv
+\cvsection{Conference Presentations}
+\datedentry{\textbf{Country-Specific Threshold Estimation in Global VARs}}{\href{https://2026-kiea-summerconference.netlify.app/\#program}{2026 KIEA Summer Conference}, Session 1B (International Finance): Applied Econometrics, SeaMARQ Hotel, Gangneung, Republic of Korea}{Aug. 18, 2026}
+\fi
+
+\iflongcv
+\newpage
 \cvsection{KIEP Policy Research and Publications}
-\begin{enumerate}[series=kieppubs,itemsep=0.48em]
+\begin{enumerate}[series=kieppubs,itemsep=0.30em]
   \item Hayun Song and Munsu Kang (2026). \href{https://www.kiep.go.kr/gallery.es?act=view\&bid=0003\&list_no=12327\&mid=a10102020000}{\emph{Oil Price Shocks from the U.S.-Iran War: Spillover Effects on Major Economies}}. KIEP Today's World Economy 26-09.
   \item Hayun Song and ByeongJun Lee (2026). \href{https://www.kiep.go.kr/gallery.es?act=view\&bid=0004\&list_no=12214\&mid=a10102030000}{\emph{AI Usage in Major Economies and Korea}}. KIEP World Economy Focus 26-04.
   \item Hayun Song, Sang-Ha Yoon, and Youngdoo Cho (2026). \href{https://www.kiep.go.kr/gallery.es?act=view\&bid=0003\&list_no=12190\&mid=a10102020000}{\emph{Economic Spillovers of Major External Shocks: Trade Policy Uncertainty and Oil Prices}}. KIEP Today's World Economy 26-03.
@@ -202,7 +216,7 @@ Econometrics, Applied Econometrics, Bayesian Statistics
 
 \cvsection{Data Analytic Projects}
 \iflongcv
-\begin{enumerate}[itemsep=0.44em]
+\begin{enumerate}[itemsep=0.30em]
 \else
 \begin{enumerate}[itemsep=0.28em]
 \fi
