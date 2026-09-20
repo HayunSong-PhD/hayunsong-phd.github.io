@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "About"
-excerpt: "I am an economist at KIEP working on international macroeconomics and econometrics."
+excerpt: "I am an econometrician at KIEP, focusing on econometric theory and Bayesian methods with applications to international macroeconomics and finance."
 author_profile: true
 redirect_from: 
   - /about/
@@ -9,9 +9,9 @@ redirect_from:
 ---
 <div class="home-intro">
   <p class="home-intro__eyebrow">Associate Research Fellow · KIEP</p>
-  <p class="home-intro__lead">International macroeconomist and econometrician.</p>
+  <p class="home-intro__lead">Econometrician.</p>
   <p>
-    I work in the International Macroeconomics Team, Department of International Macroeconomics and Finance, at the <a href="https://www.kiep.go.kr/">Korea Institute for International Economic Policy (KIEP)</a>. My research examines international macroeconomic spillovers and develops econometric methods for learning dependence in high-dimensional data.
+    I work in the International Macroeconomics Team, Department of International Macroeconomics and Finance, at the <a href="https://www.kiep.go.kr/">Korea Institute for International Economic Policy (KIEP)</a>. My research focuses on econometric theory and Bayesian methods, with applications to international macroeconomics and finance.
   </p>
   <p>
     I received my Ph.D. in Economics from the University of Southern California in 2024 under the supervision of <a href="http://www.econ.cam.ac.uk/people/emeritus/mhp1">M. Hashem Pesaran</a>.
@@ -41,12 +41,12 @@ redirect_from:
 <section class="home-section" aria-labelledby="research-interests">
   <h2 id="research-interests" class="home-section__title">Research Interests</h2>
   <ul class="home-topics">
-    <li>International macroeconomics</li>
     <li>Econometric theory</li>
     <li>Bayesian econometrics</li>
     <li>Machine learning</li>
     <li>Structural learning</li>
     <li>Conditional dependence</li>
+    <li>International macroeconomics</li>
   </ul>
 </section>
 
