@@ -8,6 +8,8 @@ permalink: /publication/2025-11-KIEP-intangible-assets
 date: 2025-11-18
 venue: "KIEP Policy Analyses 25-01"
 external_url: "https://www.kiep.go.kr/gallery.es?act=view&bid=0001&list_no=12180&mid=a20205040000"
+summary: >-
+  Studies cross-border AI investment and the international spillovers of intangible assets using historical evidence, a theoretical model, and GVAR analysis. The findings inform how Korea can combine international technology partnerships with sustained domestic innovation.
 abstract: >-
   This study analyzes cross-border investment in artificial intelligence and the international spillover effects of intangible assets, with a focus on how technology-following economies such as Korea can respond to the concentration of global AI investment in the United States and China. Combining historical evidence, a theoretical model, and GVAR analysis, it finds that technology partnerships and sustained R&D are both important and that overseas AI investment can be closely associated with domestic output and market expectations. The report recommends supporting overseas investment and joint ventures while bringing acquired technology and talent back to Korea, concentrating resources in areas that combine Korea's manufacturing and IT strengths, and balancing international cooperation with continued domestic innovation.
 ---

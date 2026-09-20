@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "About"
-excerpt: "Hayun Song is an economist at KIEP working on international macroeconomics and econometrics."
+excerpt: "I am an economist at KIEP working on international macroeconomics and econometrics."
 author_profile: true
 redirect_from: 
   - /about/
@@ -20,12 +20,26 @@ redirect_from:
   <div class="home-actions" aria-label="Primary links">
     <a class="home-action home-action--primary" href="/publications/">View research</a>
     <a class="home-action" href="/cv/">CV: Short &amp; Long</a>
-    <a class="home-action" href="https://www.kiep.go.kr/expertsView.es?mid=a20108030000&amp;staff_seq=390">KIEP profile</a>
+    <a class="home-action" href="https://www.kiep.go.kr/expertsView.es?mid=a20108030000&amp;staff_seq=390">KIEP Profile</a>
   </div>
 </div>
 
+{% assign recent_presentations = site.data.presentations | sort: "date" | reverse %}
+{% if recent_presentations.size > 0 %}
+<section class="home-activity" aria-labelledby="recent-activity">
+  <h2 id="recent-activity">Recent Activity</h2>
+  {% for presentation in recent_presentations limit: 1 %}
+  <p>
+    <time datetime="{{ presentation.date }}">{{ presentation.date | date: "%B %Y" }}</time>
+    <span>Presented <em>{{ presentation.title }}</em> at the {{ presentation.event }}.</span>
+    <a href="/publications/#{{ presentation.id }}">Presentation details <span aria-hidden="true">&rarr;</span></a>
+  </p>
+  {% endfor %}
+</section>
+{% endif %}
+
 <section class="home-section" aria-labelledby="research-interests">
-  <h2 id="research-interests" class="home-section__title">Research interests</h2>
+  <h2 id="research-interests" class="home-section__title">Research Interests</h2>
   <ul class="home-topics">
     <li>International macroeconomics</li>
     <li>Econometric theory</li>
@@ -38,7 +52,7 @@ redirect_from:
 
 <section class="home-section" aria-labelledby="recent-publications">
   <div class="home-section__heading">
-    <h2 id="recent-publications" class="home-section__title">Recent KIEP publications</h2>
+    <h2 id="recent-publications" class="home-section__title">Recent KIEP Publications</h2>
     <a href="/publications/#kiep-publications">View all research</a>
   </div>
 

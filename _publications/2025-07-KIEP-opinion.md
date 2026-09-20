@@ -7,6 +7,8 @@ permalink: /publication/2025-07-KIEP-opinion
 date: 2025-07-10
 venue: "KIEP Opinions No. 319"
 external_url: "https://www.kiep.go.kr/gallery.es?act=view&bid=0008&list_no=11935&mid=a20205020000"
+summary: >-
+  Explores how modest political differences can grow into polarization through interactions among social networks, digital platforms, and electoral incentives. A simulation illustrates the formation of opposing opinion clusters and the importance of exposure to different views.
 abstract: >-
   This essay explains how modest political differences can compound into deep polarization through a feedback loop involving human psychology, digital platforms, and electoral incentives. Drawing on bounded-confidence models, filter-bubble economics, and models of local cultural convergence, it shows how people increasingly interact only with like-minded views while engagement-driven algorithms reinforce those boundaries. A simulation illustrates how an initially moderate opinion distribution can split into opposing clusters even without deliberate manipulation. The analysis argues that polarization can emerge from ordinary incentives operating at scale and that restoring cross-cutting exposure is essential to preserving a functional democratic center.
 ---

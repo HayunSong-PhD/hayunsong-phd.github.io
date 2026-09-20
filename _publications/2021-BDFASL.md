@@ -2,6 +2,8 @@
 title: "Bayesian dynamic factor augmented structure learning: cross-sectional dependence for residuals"
 authors: "Hayun Song"
 category: working_paper
+summary: >-
+  Develops a Bayesian dynamic factor-augmented VAR approach to learning conditional dependence in high-dimensional data. The method combines latent-factor estimation, rescaled spike-and-slab priors, and graphical model selection, with simulations and an application to U.S. house prices.
 collection: publications
 permalink: /publication/2021-BDFASL
 date: 2021-12-15

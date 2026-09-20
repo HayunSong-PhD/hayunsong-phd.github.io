@@ -27,7 +27,9 @@
       </div>
     {% endif %}
 
-    <h2 class="archive__item-title{% if post.collection == 'portfolio' or post.noninteractive %} archive__item-title--static{% endif %}" itemprop="headline">
+    {% assign heading_tag = "h2" %}
+    {% if include.compact_abstract %}{% assign heading_tag = "h3" %}{% endif %}
+    <{{ heading_tag }} class="archive__item-title{% if post.collection == 'portfolio' or post.noninteractive %} archive__item-title--static{% endif %}" itemprop="headline">
       {% if post.collection == 'portfolio' or post.noninteractive %}
         {{ title }}
       {% elsif post.external_url %}
@@ -41,7 +43,7 @@
       {% else %}
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
-    </h2>
+    </{{ heading_tag }}>
 
     <!-- Display publication metadata -->
     {% if post.collection == 'teaching' %}
@@ -69,7 +71,7 @@
     <!-- Display the abstract consistently across research categories -->
     {% if post.abstract %}
       {% if include.compact_abstract %}
-        <p class="publication__abstract-preview"><strong>Summary:</strong> {{ post.abstract | truncatewords: 55 }}</p>
+        {% if post.summary %}<p class="publication__abstract-preview">{{ post.summary }}</p>{% endif %}
         <details class="publication__abstract">
           <summary>Full abstract</summary>
           <p>{{ post.abstract }}</p>
@@ -84,7 +86,7 @@
     {% endif %}
 
     {% if post.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    <div class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</div>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}

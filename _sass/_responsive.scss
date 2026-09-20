@@ -146,14 +146,85 @@ pre {
   .sidebar {
     width: 100%;
     max-width: none;
+    margin-bottom: 2rem;
   }
 
-  .author__content {
+  .author-profile {
+    --profile-photo-size: 120px;
+    position: relative;
+    display: grid;
+    grid-template-columns: var(--profile-photo-size) minmax(0, 1fr);
+    gap: 0.5rem 1.25rem;
+    align-items: center;
+  }
+
+  .author-profile > .author__avatar {
+    display: block;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: var(--profile-photo-size);
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: none;
+      height: auto;
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+  }
+
+  .author-profile .author__content {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
     min-width: 0;
+    padding: 0;
+    line-height: 1.4;
   }
 
-  .author__bio {
+  .author-profile .author__name {
+    margin: 0 0 0.2rem;
+    font-size: 1.2rem;
+  }
+
+  .author-profile .author__bio {
+    margin: 0;
+    font-size: clamp(14px, 0.9rem, 16px);
+    line-height: 1.45;
     overflow-wrap: anywhere;
+  }
+
+  .author-profile .author__urls-wrapper {
+    position: static;
+    display: block;
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
+    justify-self: start;
+    cursor: auto;
+
+    button {
+      margin: 0;
+      padding: 0.45rem 0.65rem;
+      font-size: clamp(13px, 0.8rem, 15px);
+    }
+  }
+
+  .author-profile .author__urls {
+    top: 100%;
+    right: auto;
+    left: 0;
+    width: 20rem;
+    max-width: 100%;
+    margin-top: 0.75rem;
+    z-index: 20;
+
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -175,13 +246,13 @@ pre {
     margin-bottom: 1.35rem;
   }
 
-  .author__content {
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
+  .author-profile {
+    --profile-photo-size: 96px;
+    column-gap: 1rem;
   }
 
-  .author__bio {
-    line-height: 1.4;
+  .author-profile .author__name {
+    font-size: 1.15rem;
   }
 
   .greedy-nav button,
@@ -200,21 +271,9 @@ pre {
   }
 }
 
-@media (max-width: 400px) {
-  .author__avatar {
-    width: 40px;
-  }
-
-  .author__content {
-    padding-left: 0.7rem;
-  }
-
-  .sidebar .author__name {
-    font-size: 1rem;
-  }
-
-  .author__bio {
-    font-size: 0.78rem;
+@media (max-width: 360px) {
+  .author-profile {
+    --profile-photo-size: 90px;
   }
 }
 

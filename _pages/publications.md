@@ -15,6 +15,7 @@ author_profile: true
   <a href="#kiep-publications">KIEP Publications</a>
   <a href="#selected-research">Selected Research</a>
   <a href="#working-papers">Working Papers</a>
+  <a href="#presentations">Presentations &amp; Seminars</a>
 </nav>
 
 <section class="research-section" aria-labelledby="kiep-publications">
@@ -41,5 +42,34 @@ author_profile: true
   {% if post.category == 'working_paper' %}
     {% include archive-single.html compact_abstract=true %}
   {% endif %}
+{% endfor %}
+</section>
+
+<section class="research-section" aria-labelledby="presentations">
+<h2 id="presentations">Presentations &amp; Seminars</h2>
+{% assign presentations = site.data.presentations | sort: "date" | reverse %}
+{% assign presentation_years = presentations | group_by_exp: "item", "item.date | date: '%Y'" %}
+{% for year in presentation_years %}
+<div class="presentation-year">
+  <h3 class="presentation-year__heading">{{ year.name }}</h3>
+  <ol class="presentation-list">
+    {% for presentation in year.items %}
+    <li>
+      <article class="presentation" id="{{ presentation.id }}">
+        <time class="presentation__date" datetime="{{ presentation.date }}">{{ presentation.date | date: "%B %-d" }}</time>
+        <div class="presentation__content">
+          <h4 class="presentation__title">{{ presentation.title }}</h4>
+          <p class="presentation__event">{{ presentation.event }} · {{ presentation.location }}</p>
+          <p class="presentation__details">{{ presentation.session }}<br>{{ presentation.venue }}</p>
+          <a class="presentation__program" href="{{ presentation.program_url }}">Conference program <span aria-hidden="true">&nearr;</span><span class="sr-only"> — {{ presentation.event }}</span></a>
+          {% if presentation.program_title %}
+          <p class="presentation__note">The program lists the earlier title <em>{{ presentation.program_title }}</em>.</p>
+          {% endif %}
+        </div>
+      </article>
+    </li>
+    {% endfor %}
+  </ol>
+</div>
 {% endfor %}
 </section>

@@ -8,6 +8,8 @@ permalink: /publication/2025-12-KIEP-china-growth
 date: 2025-12-30
 venue: "KIEP Basic Research Report 25-12"
 external_url: "https://www.kiep.go.kr/gallery.es?act=view&bid=0001&list_no=12325&mid=a10101200000"
+summary: >-
+  Evaluates China's longer-term growth prospects through demographic, productivity, and structural-change scenarios using time-series and GVAR analysis. The report considers how China's transition may reshape industrial competition, supply-chain risks, and opportunities for Korea.
 abstract: >-
   This report examines the structural slowdown of China's economy from both supply- and demand-side perspectives and evaluates its medium- and long-term growth prospects using time-series analysis and a GVAR model. It documents weakening returns to capital, demographic pressures, slower productivity growth, and constraints on consumption-led expansion, while also considering policy efforts centered on technological innovation and new quality productive forces. The baseline projection points to a gradual decline in average growth over successive five-year periods, with a widening gap between optimistic and pessimistic scenarios depending on the success of structural reform and productivity gains. The report discusses implications for Korea, including intensified competition in strategic industries, new opportunities from China's structural transition, and the need to monitor macroeconomic and supply-chain risks.
 ---
